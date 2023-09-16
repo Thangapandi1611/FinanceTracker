@@ -8,7 +8,7 @@
   <div class="card bg-light">
     <div class="card-body">
       <p class="card-text">PROJECT BUDGET</p>
-      <h3 class="card-title">${{project.budget}}</h3>
+      <h3 class="card-title">₹{{project.budget}}</h3>
     </div>
   </div>
 
@@ -17,9 +17,9 @@
       <p class="card-text">BUDGET LEFT</p>
 
       {% if project.budget_left > 0 %}
-      <h3 class="card-title text-success">${{ project.budget_left }}</h3>
+      <h3 class="card-title text-success">₹{{ project.budget_left }}</h3>
       {% else %}
-      <h3 class="card-title text-danger">${{ project.budget_left }}</h3>
+      <h3 class="card-title text-danger">₹{{ project.budget_left }}</h3>
       {% endif %}
 
 
