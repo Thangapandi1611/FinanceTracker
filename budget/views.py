@@ -1,3 +1,4 @@
+from unittest import loader
 from django.shortcuts import render, get_object_or_404
 from django.views.generic.edit import CreateView
 from .forms import ProjectCreateForm, ExpenseForm
@@ -12,7 +13,9 @@ def project_list(request):
     all_projects = Project.objects.all()
     return render(request, 'budget/project_list.html', { 'all_projects': all_projects})
 
-
+def addp(request):
+    print("Hello")
+    return "hi"
 def project_detail(request, projectslug):
     project = get_object_or_404(Project, slug=projectslug)
 

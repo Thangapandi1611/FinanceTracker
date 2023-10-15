@@ -3,17 +3,17 @@
 
 {% block content %}
 
-  <h1 class="text-center my-3">ADD NEW PROJECT</h1>
+  <h1 class="text-center my-3" style="color: aliceblue;">ADD NEW PROJECT</h1>
   <form method="POST">
     {% csrf_token %}
 
-    <div class="form-group">
+    <div class="form-group" style="color: rgb(255, 255, 255); font-family: 'Times New Roman', Times, serif; font-weight: bolder;">
       {{form.as_p}}
     </div>
 
 
     <div class="form-group">
-      <label for="categoryInput">Expense categories</label>
+      <label for="categoryInput" style="color: rgb(255, 255, 255); font-family: 'Times New Roman', Times, serif; font-weight: bolder;">Expense categories</label>
       <input class="form-control" type="text" name="categoryInput" id="categoryInput" placeholder="Enter category and hit 'enter'">
       <input type="hidden" name="categoriesString">
     </div>
